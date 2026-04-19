@@ -1,0 +1,10 @@
+name: Basic Test CI
+on: [push]
+
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Execution
+        run: echo "Pipeline is active. Ready for Go code."
